@@ -14,16 +14,16 @@
 # second value which ends at ", ". So we get 41%
 # Now we'll replace the % sign by "", so 41% will
 # be changed to 41 now.
-battery_level=$(acpi -b | grep -P -o '[0-9]+(?=%)')
+battery_level=$(acpi -b | grep "Battery ${ALERT_BATTERY}" | grep -Po '[0-9]+(?=%)')
 
 # If the charger is plugged in, acpi shows "charging"
 # and if it's not plugged in, it shows "discharging".
 # if acpi -b shows charging, "grep -c" will return 1
 # else it will return 0
-ac_power=$(acpi -b | grep -c "Charging")
+ac_power=$(acpi -b | grep "Battery ${ALERT_BATTERY}" | grep -c "Charging")
 
 # Checks if ac_power is ON and battery is full
-battery_full=$(acpi -b | grep -c "Full")
+battery_full=$(acpi -b | grep "Battery ${ALERT_BATTERY}" | grep -c "Full")
 
 # when the battery is charging and it gets charged up to 100%
 # if ac_power is ON and battery_level is 100
