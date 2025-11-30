@@ -29,11 +29,11 @@ Just a friendly reminder to charge your battery, which might get low if you don'
 To **install** or **update** battrey alert, you should run the [install script][2]. To do that, you may either download and run the script manually, or use the following `cURL` or `Wget` command:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/asapdotid/battery-alert-linux/refs/heads/main/install.sh | bash
+curl -o- https://raw.githubusercontent.com/Rancy21/battery-alert-linux/refs/heads/main/install.sh | bash
 ```
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/asapdotid/battery-alert-linux/refs/heads/main/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/Rancy21/battery-alert-linux/refs/heads/main/install.sh | bash
 ```
 
 #### Additional Notes
