@@ -82,11 +82,3 @@ So my config set `ALERT_BATTERY=1`
 ```bash
 systemctl --user list-timers --all
 ```
-
-## To Do
-
-[ ] Custom set timer
-
-If any issue please contact me [@asapdotid](mailto:asapdotid@gmail.com) 😃
-
-<img class="float-left rounded-2 avatar-user" src="https://avatars.githubusercontent.com/u/34257858?s=96&amp;v=4" width="48" height="48" alt="@asapdotid">
